@@ -22,7 +22,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinAraba1",
         karakter: "Araba Radyosu",
         metin: "Bugün 11 Nisan ve bu sizin trafik uyarınız. Eminim ki çoğunuz bu haftasonu piknik yapmaya gideceksiniz. Yani ana otobanların hepsinde ağır trafiğe hazırlıklı olun.",
-        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog2",
@@ -40,7 +41,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinTarih1",
         karakter: "",
         metin: "Yıl 19, Lise Anısı",
-        arkaPlan: "url('/bts/btsImages/songjuLiseArkaBahce.jpg')"
+        arkaPlan: "url('/bts/btsImages/songjuLiseArkaBahce.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDisiplinci1",
@@ -70,7 +72,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinDepo2",
         karakter: "",
         metin: "",
-        arkaPlan: "url('/bts/btsImages/depoToplu.jpg')"
+        arkaPlan: "url('/bts/btsImages/depoToplu.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog4",
@@ -82,13 +85,15 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinKorna1",
         karakter: "",
         metin: "HONK! HONK!",
-        arkaPlan: "url('/bts/btsImages/songjuLisesi.jpg')"
+        arkaPlan: "url('/bts/btsImages/songjuLisesi.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinBenzinci1",
         karakter: "Benzinci",
         metin: "Hay ananı, neden buraya koyuyorlar ki?!",
-        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog5",
@@ -118,7 +123,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinTarih2",
         karakter: "",
         metin: "22 Mayıs, Yıl 22",
-        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog7",
@@ -130,7 +136,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinDiyalog8",
         karakter: "Kim Seokjin",
         metin: "Afedersiniz. Namjoon sizin çalışanlarınızdan mı?",
-        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGunduz.jpg')"
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGunduz.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinBenzinci4",
@@ -154,7 +161,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinPolis1",
         karakter: "Polis",
         metin: "Girebilirsiniz. On dakikan var.",
-        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')"
+        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog10",
@@ -196,7 +204,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinTarih3",
         karakter: "",
         metin: "11 Nisan, Yıl 22",
-        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinKimNamjoon4",
@@ -262,7 +271,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinPolis2",
         karakter: "Polis",
         metin: "Bak, o kadar yaralanmış bile görünmüyorsun. İki haftada biter. Anlaşalım ve bitirelim, olur mu?",
-        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')"
+        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDovulenAdam5",
@@ -280,7 +290,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinTarih4",
         karakter: "",
         metin: "22 Mayıs, Yıl 22",
-        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')"
+        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog13",
@@ -340,7 +351,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinDiyalog17",
         karakter: "Kim Seokjin",
         metin: "Eğer... Eğer o gece Namjoon ile konuşsaydım, belki de onunla hapishanede konuşmazdık.",
-        arkaPlan: "url('/bts/btsImages/polisKarakoluDisi.jpg')"
+        arkaPlan: "url('/bts/btsImages/polisKarakoluDisi.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinGazeteci1",
@@ -376,19 +388,22 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinDiyalog20",
         karakter: "Kim Seokjin",
         metin: "Yedimizin beraber mutlu olduğu bir zaman vardı, birbirimize sahip olduğumuzu bilmek.",
-        arkaPlan: "url('/bts/btsImages/mutluBts.jpg')"
+        arkaPlan: "url('/bts/btsImages/mutluBts.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog21",
         karakter: "Kim Seokjin",
         metin: "Nerede işler yanlışa gitti? Herkesin sonu kötü oldu. Ayrıldıktan sonra herhangi birimiz mutlu muyduk ki? O zamanlar, sadece beraber olmak bizi mutlu etmek için yeterli bir sebepti. Ama neden... Bize ne oldu?",
-        arkaPlan: "url('/bts/btsImages/sahil.jpg')"
+        arkaPlan: "url('/bts/btsImages/sahil.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinKedi1",
         karakter: "Kedi",
         metin: "Eğer zamanı geri döndürebilsen, hataları ve yanlışları düzeltip... Herkesi kurtarabileceğine inanıyor musun?",
-        arkaPlan: "url('/bts/btsImages/sahil.jpg')"
+        arkaPlan: "url('/bts/btsImages/sahil.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinDiyalog22",
@@ -400,7 +415,8 @@ let kimSeokjinBolum1Metinleri = [
         id: "kimSeokjinDiyalog23",
         karakter: "Kim Seokjin",
         metin: "Galiba rüya gördüm... Hatırlayamıyorum...",
-        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')",
+        gecis: true
     },
     {
         id: "kimSeokjinTarih5",
@@ -416,17 +432,21 @@ donguyeDevamEt.addEventListener('click', function() {
     let anaIcerik = document.getElementById('kimSeokjinAnaSayfa');
     let sabitArkaPlan = document.getElementById('background');
 
+    anaIcerik.classList.add('oyunModu');
+
+    document.body.style.backgroundColor = "rgb(12, 12, 12)";
+
     if (sabitArkaPlan) {
         sabitArkaPlan.style.display = "none"; 
     }
 
-    anaSayfa.style.backgroundColor = "black";
+    anaSayfa.style.backgroundColor = "rgb(12, 12, 12)";
 
     anaIcerik.innerHTML = `
-        <div id="diyalog-sistemi">
+        <div id="diyalogSistemi">
             <h2 id="konusanKarakter"></h2>
-            <p id="kimSeokjinIkonikSoz">Hikaye başlıyor...</p>
-            <button id="devamEtButonu">Devam Et (Tıkla)</button>
+            <p id="kimSeokjinMetinler">Yükleniyor...</p>
+            <button id="devamEtButonu" style="visibility: hidden">Devam Et</button> 
         </div>
     `;
 
@@ -438,17 +458,21 @@ yeniDonguyeBasla.addEventListener('click', function() {
     let anaIcerik = document.getElementById('kimSeokjinAnaSayfa');
     let sabitArkaPlan = document.getElementById('background');
 
+    anaIcerik.classList.add('oyunModu');
+
+    document.body.style.backgroundColor = "rgb(12, 12, 12)";
+
     if (sabitArkaPlan) {
         sabitArkaPlan.style.display = "none"; 
     }
 
-    anaSayfa.style.backgroundColor = "black";
+    anaSayfa.style.backgroundColor = "rgb(12, 12, 12)";
 
     anaIcerik.innerHTML = `
-        <div id="diyalog-sistemi">
+        <div id="diyalogSistemi">
             <h2 id="konusanKarakter"></h2>
-            <p id="kimSeokjinIkonikSoz">Hikaye başlıyor...</p>
-            <button id="devamEtButonu">Devam Et (Tıkla)</button>
+            <p id="kimSeokjinMetinler">Yükleniyor...</p>
+            <button id="devamEtButonu" style="visibility: hidden">Devam Et</button> 
         </div>
     `;
 
@@ -459,48 +483,59 @@ yeniDonguyeBasla.addEventListener('click', function() {
 function kimSeokjinBolum1() {
     if (diyalogSirasi < kimSeokjinBolum1Metinleri.length) {
         let suAnKiSahne = kimSeokjinBolum1Metinleri[diyalogSirasi];
-        
-        anaSayfa.classList.add('sahne-gecis');
 
-        setTimeout(() => {
-            anaSayfa.style.backgroundImage = "none"; 
-            anaSayfa.style.backgroundColor = "black";
+        if (suAnKiSahne.gecis) {
+            anaSayfa.classList.add('sahne-gecis');
 
-            document.getElementById('konusanKarakter').innerText = suAnKiSahne.karakter;
-            anaSayfa.setAttribute('id-sahne', suAnKiSahne.id);
+            setTimeout(() => {
+                anaSayfa.style.backgroundImage = "none"
 
-            if (suAnKiSahne.metin && suAnKiSahne.metin !== "") {
-                daktiloYazKelime('kimSeokjinIkonikSoz', suAnKiSahne.metin, 150); 
-            } else {
-                document.getElementById('kimSeokjinIkonikSoz').textContent = "";
-                let buton = document.getElementById('devamEtButonu');
-                if(buton) buton.style.visibility = "visible";
-            }
-
-            if(suAnKiSahne.arkaPlan) {
-                anaSayfa.style.backgroundImage = suAnKiSahne.arkaPlan;
-                anaSayfa.style.backgroundSize = "cover";
-                anaSayfa.style.backgroundPosition = "center";
-            }
-
-            anaSayfa.classList.remove('sahne-gecis');
-            
-        }, 500);
+                icerigiGuncelle(suAnKiSahne);
+                anaSayfa.classList.remove('sahne-gecis');
+            }, 800); 
+        } else {
+            icerigiGuncelle(suAnKiSahne);
+        }
 
         diyalogSirasi++;
+    }
+}
+
+function icerigiGuncelle(sahne) {
+    let metinAlani = document.getElementById('kimSeokjinMetinler');
+    let karakterAlani = document.getElementById('konusanKarakter');
+    let buton = document.getElementById('devamEtButonu');
+
+    karakterAlani.innerText = sahne.karakter;
+    anaSayfa.setAttribute('idSahne', sahne.id);
+    anaSayfa.setAttribute('karakter', sahne.karakter);
+
+    if(buton) buton.style.visibility = "hidden";
+
+    if (sahne.metin && sahne.metin !== "") {
+        daktiloYazKelime('kimSeokjinMetinler', sahne.metin, 150); 
+    } else {
+        metinAlani.textContent = "";
+        if(buton) buton.style.visibility = "visible";
+    }
+
+    if(sahne.arkaPlan) {
+        anaSayfa.style.backgroundImage = sahne.arkaPlan;
+        anaSayfa.style.backgroundSize = "cover";
+        anaSayfa.style.backgroundPosition = "center";
     }
 }
 
 let daktiloZamanlayici;
 
 function daktiloYazKelime(elementId, metin, hiz) {
-    let kelimeler = metin.split(" "); //
+    let kelimeler = metin.split(" ");
     let i = 0;
     let element = document.getElementById(elementId);
     let buton = document.getElementById('devamEtButonu');
     
-    element.textContent = ""; 
     if(buton) buton.style.visibility = "hidden";
+    element.textContent = ""; 
     
     clearInterval(daktiloZamanlayici);
 
