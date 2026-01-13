@@ -5,6 +5,8 @@ let yeniDonguyeBasla=document.getElementById('yeniDonguyeBasla');
 let zamanCizelgesi=document.getElementById('zamanCizelgesi');
 let ekstralar=document.getElementById('ekstralar');
 
+let kimSeokjinMevcutBolum = localStorage.getItem('kimSeokjinKayitliBolum') || '1';
+
 let kimSeokjinBolum1Metinleri = [
     {
         id: "kimSeokjinUcak1",
@@ -426,6 +428,236 @@ let kimSeokjinBolum1Metinleri = [
     }
 ];
 
+let kimSeokjinBolum2Metinleri = [
+    {
+        id: "kimSeokjinBenzinci6",
+        karakter: "Benzinci",
+        metin: "Neden bunu buraya koyuyorlar ki!",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinBenzinci7",
+        karakter: "Benzinci",
+        metin: "Tamamdır. Nasıl ödemek istersiniz?",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinBenzinci8",
+        karakter: "Benzinci",
+        metin: "Efendim? Başka bir şeye mi ihtiyacınız vardı?",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog24",
+        karakter: "Kim Seokjin",
+        metin: "Hayır.",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinBenzinci9",
+        karakter: "Benzinci",
+        metin: "Çıkış şurası efendim.",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog25",
+        karakter: "Kim Seokjin",
+        metin: "Namjoon'a bir merhaba demeliydim. Nasıl durumdalar acaba.",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDusme1",
+        karakter: "",
+        metin: "TAAAKK!!!",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinAniFren1",
+        karakter: "",
+        metin: "SCREECH!!!",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog26",
+        karakter: "Kim Seokjin",
+        metin: "Huff... Huff... Huff... HUFF?!",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinJeonJungkookIntihar1",
+        karakter: "",
+        metin: "Bina çatısından Kim Seokjin'in arabasının üstüne Jeon Jungkook düşer.",
+        arkaPlan: "url('/bts/btsImages/ezilmisAraba.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog27",
+        karakter: "Kim Seokjin",
+        metin: "...Jungkook?",
+        arkaPlan: "url('/bts/btsImages/ezilmisAraba.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog28",
+        karakter: "Kim Seokjin",
+        metin: "THUMP... THUMP THUMP THUMP THUMP THUMP THUMP THUMP",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinAdam1",
+        karakter: "Adam",
+        metin: "Hey! İyi misin?",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog29",
+        karakter: "Kim Seokjin",
+        metin: "THUMP THUMP THUMP THUMP",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinAdam2",
+        karakter: "Adam",
+        metin: "ARABADAN ÇIK!",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog30",
+        karakter: "Kim Seokjin",
+        metin: "THUMP THUMP THUMP",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinAdam2",
+        karakter: "Adam",
+        metin: "",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog31",
+        karakter: "Kim Seokjin",
+        metin: "Tuhaf bir rüya görmüş olmalıyım ama hatırlayamıyorum.",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinFotograf1",
+        karakter: "",
+        metin: "",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinMutluBts.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog32",
+        karakter: "Kim Seokjin",
+        metin: "Onları özlüyorum. İyiler midir? Bi şey tuhaf.",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinAraba2",
+        karakter: "Araba Radyosu",
+        metin: "Bugün 11 Nisan ve bu, sizin trafik uyarınız. Eminim ki çoğunuz bu haftasonu piknik yapmaya gideceksiniz. Yani ana otobanların hepsinde ağır trafiğe hazırlıklı olun.",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog33",
+        karakter: "Kim Seokjin",
+        metin: "Jungkook...? O da neydi?",
+        arkaPlan: "url('/bts/btsImages/songjuLisesi.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog34",
+        karakter: "Kim Seokjin",
+        metin: "THUMP THUMP Neden kalbim bu kadar hızlı atıyor? Sorunum ne?",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinKorna2",
+        karakter: "",
+        metin: "HONK! HONK!",
+        arkaPlan: "url('/bts/btsImages/songjuLisesi.jpg')"
+    },
+    {
+        id: "kimSeokjinBenzinci10",
+        karakter: "Benzinci",
+        metin: "Neden bunu buraya koyarlar ki?!",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinBenzinci11",
+        karakter: "Benzinci",
+        metin: "Çıkış şurası, efendim.",
+        arkaPlan: "url('/bts/btsImages/benzinIstasyonuGece.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog35",
+        karakter: "Kim Seokjin",
+        metin: "Önemli bir şeyi unutmuşum gibi hissediyorum. Ne olabilir ki?",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog36",
+        karakter: "Kim Seokjin",
+        metin: "Neyi unuttum? Neydi? Neden hatırlayamıyorum?",
+        arkaPlan: "url('/bts/btsImages/arabaIci.jpg')"
+    },
+    {
+        id: "kimSeokjinDusme2",
+        karakter: "",
+        metin: "TAAAKK!!!",
+        arkaPlan: "url('/bts/btsImages/marketGece.jpg')"
+    },
+    {
+        id: "kimSeokjinJeonJungkookIntihar2",
+        karakter: "",
+        metin: "Jeon Jungkook kendisini birbinadan atar."
+    },
+    {
+        id: "kimSeokjinKedi2",
+        karakter: "Kedi",
+        metin: "Çok mu geç kaldım? Aradığım sen olabilirdin. Eğer anlaşmayı çoktan mühürlediysen, gözlerini aç ve doğruyu gör.",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog37",
+        karakter: "Kim Seokjin",
+        metin: "Kim... Kimsin?!",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinKedi",
+        karakter: "Kedi",
+        metin: "Bu, yaşamak zorunda olduğun dünya, ve görmek zorunda olduğun kader. Bu karmakarışık kaderin içinde tek başına başaramayacaksın. Döngüyü hatırlamanın yolu şu: Gözünü açtığında...",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinAni1",
+        karakter: "",
+        metin: "Bay Kim! Neden babanızı öldürdünüz? Neden bunun hakkında hiçbir şey söylemediniz?!",
+        arkaPlan: "url('/bts/btsImages/polisKarakoluDisi.jpg')"
+    },
+    {
+        id: "kimSeokjinAni2",
+        karakter: "",
+        metin: "Seni fakir piç! Bir anlaşmayı bile karşılayamıyor musun?! Olacağı varmış.",
+        arkaPlan: "url('/bts/btsImages/polisKarakoluIci.jpg')"
+    },
+    {
+        id: "kimSeokjinAni3",
+        karakter: "",
+        metin: "Eğer zamanı geri döndürebilsen, hataları ve yanlışları düzeltip... Herkesi kurtarabileceğine inanıyor musun?",
+        arkaPlan: "url('/bts/btsImages/sahil.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog38",
+        karakter: "Kim Seokjin",
+        metin: "Thump huff huff huff. O da kimdi? Neler oluyor? Bu da ne...?",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    },
+    {
+        id: "kimSeokjinDiyalog39",
+        karakter: "Kim Seokjin",
+        metin: "Bu sefer ses farklıydı. Sanki günler sürekli kendini tekrarlıyor gibiydi. Gerçekten de olabilir mi? Ben gerçekten de zamanda geriye mi döndüm?!",
+        arkaPlan: "url('/bts/btsImages/kimSeokjinOda.jpg')"
+    }
+]
+
 let diyalogSirasi = 0;
 
 donguyeDevamEt.addEventListener('click', function() {
@@ -450,11 +682,23 @@ donguyeDevamEt.addEventListener('click', function() {
         </div>
     `;
 
-    document.getElementById('devamEtButonu').addEventListener('click', kimSeokjinBolum1);
-    kimSeokjinBolum1();
+    document.getElementById('devamEtButonu').addEventListener('click', function() {
+        if(kimSeokjinMevcutBolum === '1'){
+            kimSeokjinBolum1();
+        }
+        else if(kimSeokjinMevcutBolum === '2'){
+            kimSeokjinBolum2();
+        }
+    });
+
+    if(kimSeokjinMevcutBolum === '1') kimSeokjinBolum1();
+    else kimSeokjinBolum2();
 });
 
 yeniDonguyeBasla.addEventListener('click', function() {
+    localStorage.setItem('kimSeokjinKayitliBolum', '1');
+    kimSeokjinMevcutBolum = '1';
+    diyalogSirasi = 0;
     let anaIcerik = document.getElementById('kimSeokjinAnaSayfa');
     let sabitArkaPlan = document.getElementById('background');
 
@@ -476,11 +720,28 @@ yeniDonguyeBasla.addEventListener('click', function() {
         </div>
     `;
 
-    document.getElementById('devamEtButonu').addEventListener('click', kimSeokjinBolum1);
+    document.getElementById('devamEtButonu').addEventListener('click', function() {
+        if(kimSeokjinMevcutBolum === '1'){
+            kimSeokjinBolum1();
+        }
+        else if(kimSeokjinMevcutBolum === '2'){
+            kimSeokjinBolum2();
+        }
+    });
+
     kimSeokjinBolum1();
 });
 
 function kimSeokjinBolum1() {
+    if(diyalogSirasi >= kimSeokjinBolum1Metinleri.length){
+        localStorage.setItem('kimSeokjinKayitliBolum', '2');
+        kimSeokjinMevcutBolum = '2';
+        diyalogSirasi = 0;
+
+        kimSeokjinBolum2();
+        return;
+    }
+
     if (diyalogSirasi < kimSeokjinBolum1Metinleri.length) {
         let suAnKiSahne = kimSeokjinBolum1Metinleri[diyalogSirasi];
 
@@ -496,9 +757,8 @@ function kimSeokjinBolum1() {
         } else {
             icerigiGuncelle(suAnKiSahne);
         }
-
-        diyalogSirasi++;
     }
+    diyalogSirasi++;
 }
 
 function icerigiGuncelle(sahne) {
@@ -548,4 +808,22 @@ function daktiloYazKelime(elementId, metin, hiz) {
             if(buton) buton.style.visibility = "visible";
         }
     }, hiz);
+}
+
+function kimSeokjinBolum2(){
+    if(diyalogSirasi < kimSeokjinBolum2Metinleri.length){
+        let suAnKiSahne = kimSeokjinBolum2Metinleri[diyalogSirasi];
+
+        if(suAnKiSahne.gecis){
+            anaSayfa.classList.add('sahne-gecis');
+            setTimeout(() => {
+                icerigiGuncelle(suAnKiSahne);
+                anaSayfa.classList.remove('sahne-gecis');
+            }, 800);
+        }
+        else{
+            icerigiGuncelle(suAnKiSahne);
+        }
+        diyalogSirasi++;
+    }
 }
